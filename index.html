@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Carousel Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pembuat Carousel (Simulasi AI)</h1>
+        <p>Masukkan tema, pilih jumlah slide, dan biarkan "AI" membuatkan konten untuk Anda.</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <input type="text" id="temaInput" placeholder="Masukkan tema (cth: 'teknologi')">
+            
+            <select id="jumlahSlide">
+                <option value="3">3 Slide</option>
+                <option value="5">5 Slide</option>
+                <option value="7">7 Slide</option>
+            </select>
+            
+            <button id="buatButton">Buat Carousel!</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <p> Sedang membuat konten... </p>
+        </div>
+
+        <div id="carouselContainer">
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

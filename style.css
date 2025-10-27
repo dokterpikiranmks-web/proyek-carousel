@@ -1,0 +1,126 @@
+﻿body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input[type="text"], select, button {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+/* --- Gaya Carousel --- */
+
+#carouselContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative; /* Penting untuk tombol navigasi */
+    overflow: hidden; /* Menyembunyikan slide lain */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Efek geser */
+}
+
+.carousel-slide {
+    min-width: 100%; /* Setiap slide memakan lebar penuh */
+    box-sizing: border-box;
+    position: relative; /* Penting untuk teks di atas gambar */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; /* Agar gambar pas tanpa distorsi */
+    display: block;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    color: white;
+    padding: 40px 20px 20px 20px;
+}
+
+.slide-content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.slide-content p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Tombol Navigasi */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.carousel-nav:hover {
+    background-color: white;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
