@@ -1,0 +1,8 @@
+﻿{
+  "name": "proyek-carousel-ai",
+  "version": "1.0.0",
+  "description": "Proyek carousel dengan Gemini AI",
+  "dependencies": {
+    "@google/generative-ai": "^0.15.0"
+  }
+}
