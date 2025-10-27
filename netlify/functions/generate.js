@@ -13,7 +13,7 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 // 3. Menyiapkan Model AI Gemini
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: 'gemini-1.0-pro' });
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro-latest' });
 
 // 4. Ini adalah "Resepsionis" utama
 // Nama 'handler' ini WAJIB untuk Netlify
